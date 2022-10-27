@@ -11,7 +11,7 @@ class Song(models.Model):
     Artiste-models.ForeignKey(Artiste, on_delete = models.PROTECT)
     title = models.CharField(max_length = 100)
     date_released = models.DateTimeField(max_length = 50)
-    likes = models.CharField(max_length = 120)
+    likes = models.CharField(max_length = 120);
     Artiste_id = models.CharField(max_length = 100)
     
 class Lyrics(models.Model):
